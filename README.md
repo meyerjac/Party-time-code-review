@@ -17,11 +17,12 @@ _This party planning java application is designed to ask the user some questions
 
 
 ## BDD Specs
- * have the application ask the user a question.
- * have the application ask the user multiple questions.
- * create a Class named 'Event' that holds multiple properties about the party.
- * Make sure that every answer is stored in a temporary variable.
- * create custom methods that can be run with the gathered responses that calculate the cost for a party.
+ * Test the application creates a new Event with  new event call.
+ * test method for price of wedding party vs birthday party.
+ * test method for price of food catered.
+ * test method for open bar vs byob.
+ * test location method.
+ * test total price method.
 
 
 
@@ -30,7 +31,7 @@ _This party planning java application is designed to ask the user some questions
 
 ## Known Bugs
 
-_there are no known bugs at this time; the end goal of this project is to demonstrate that I understand the basics of objects, syntax, encapsulation, testing, and most importantly BDD in java through week 1 at my coding school_
+_there are A TON OF bugs at this time; the end goal of this project is to demonstrate that I understand the basics of objects, syntax, encapsulation, testing, and most importantly BDD in java through week 1 at my coding school_
 
 ## Support and contact details
 

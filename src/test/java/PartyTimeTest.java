@@ -1,14 +1,14 @@
 import org.junit.*;
 import static org.junit.Assert.*;
-import java.util.ArrayList;
 import java.util.List;
+import java.util.ArrayList;
 
 public class PartyTimeTest {
 
   @Test
-    public void isNewEvent_Created_true(){
-      PartyTime testEvent = new PartyTime();
+    public void NewEvent_instantiates_correctly(){
+      Event testEvent = new Event("a", "a", "a", "c", 1992, 100);
       boolean outcome = true;
-      assertEquals(outcome, test.isNewevent());
+      assertEquals(outcome, testEvent instanceof Event);
     }
-}
+  }
