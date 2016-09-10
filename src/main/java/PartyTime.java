@@ -1,3 +1,5 @@
+
+
 public class PartyTime {
   private String mType;
   private String mLocation;
@@ -6,14 +8,13 @@ public class PartyTime {
   private int mPeople;
   private int mHours;
 
-
   public PartyTime(String type, String location, String food, String drink, int people, int hours) {
     mType = type;
-    mPeople = people;
-    mHours = hours;
     mLocation = location;
     mFood = food;
     mDrink = drink;
+    mPeople = people;
+    mHours = hours;
   }
 
   public boolean isWedding(String weddingResponse) {
@@ -23,4 +24,12 @@ public class PartyTime {
       return false;
     }
   }
-}
+  public int getBaseCostPerPerson(Integer mpeople) {
+      return (mpeople * 10); /* $10 base cost per person*/
+    }
+
+  // public int getBaseCostPerPerson(Integer mpeople) {
+  //     return (mpeople * 10); /* $10 base cost per person*/
+  //   }
+
+  }

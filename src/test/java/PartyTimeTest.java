@@ -20,16 +20,16 @@ public class PartyTimeTest {
     }
 
     @Test
-      public void NewPartyTime_determinesIfItIsAWeddingOrNot_true(){
+      public void NewPartyTime_CostPerPerson_1000(){
         PartyTime testPartyTime = new PartyTime("a", "a", "a", "c", 1992, 100);
-        boolean outcome = true;
-        assertEquals(outcome, testPartyTime.isWedding("yes"));
+        int outcome = 1000;
+        assertEquals(outcome, testPartyTime.getBaseCostPerPerson(100));
       }
 
-      @Test
-        public void NewPartyTime_determinesIfItIsAWeddingOrNot_true(){
-          PartyTime testPartyTime = new PartyTime("a", "a", "a", "c", 1992, 100);
-          boolean outcome = true;
-          assertEquals(outcome, testPartyTime.isWedding("yes"));
-        }
+      // @Test
+      //   public void NewPartyTime_determinesIfItIsAWeddingOrNot_true(){
+      //     PartyTime testPartyTime = new PartyTime("a", "a", "a", "c", 1992, 100);
+      //     boolean outcome = true;
+      //     assertEquals(outcome, testPartyTime.isWedding("yes"));
+      //   }
   }

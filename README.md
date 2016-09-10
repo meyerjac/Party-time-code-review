@@ -9,7 +9,7 @@
 
 _This party planning java application is designed to ask the user some questions and then it will return the total estimated cost of the party based on custom methods by me._
 
-## Setup/Installation Requirements 
+## Setup/Installation Requirements
 
 * _the best way to run this code is to clone the file from github_
 * _then, in the command line, navigate to the compiled java file in build/classes/main_
@@ -18,7 +18,8 @@ _This party planning java application is designed to ask the user some questions
 
 ## BDD Specs
  * Test the application creates a new Event with  new event call.
- * test method for price of wedding party vs other parties.
+ * test method for identifying wedding party vs other parties.
+ * test method for people.
  * test method for price of food catered.
  * test method for open bar vs byob.
  * test location method.
