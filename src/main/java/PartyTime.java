@@ -1,22 +1,26 @@
-class Event {
-  public String mType;
-  public String mLocation;
-  public String mFood;
-  public String mDrink;
-  public int mPeople;
-  public int mHours;
+public class PartyTime {
+  private String mType;
+  private String mLocation;
+  private String mFood;
+  private String mDrink;
+  private int mPeople;
+  private int mHours;
 
 
-  public Event(String type, String location, String food, String drink, int people, int hours) {
-  mType = type;
-  mPeople = people;
-  mHours = hours;
-  mLocation = location;
-  mFood = food;
-  mDrink = drink;
+  public PartyTime(String type, String location, String food, String drink, int people, int hours) {
+    mType = type;
+    mPeople = people;
+    mHours = hours;
+    mLocation = location;
+    mFood = food;
+    mDrink = drink;
   }
 
   public boolean isWedding(String weddingResponse) {
-    return(true);
-}
+    if (weddingResponse == "yes") {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PartyTimeTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2016-09-10T03:00:33" hostname="Jackson-Meyers-MacBook-Pro.local" time="0.011">
+  <properties/>
+  <testcase name="NewPartyTime_instantiates_correctly" classname="PartyTimeTest" time="0.007"/>
+  <testcase name="NewPartyTime_determinesIfItIsAWeddingOrNot_true" classname="PartyTimeTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
