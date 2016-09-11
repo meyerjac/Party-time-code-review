@@ -40,6 +40,29 @@ public class PartyTime {
     } else if (foodResponse == "fogoDeChao") {
       return (mPeople * 50);
     } else return mPeople * 10;
+  }
+
+  public int whichDrinkPackage (String drinkResponse) {
+    mPeople = 100;
+    if (drinkResponse == "yes") {
+      return (mPeople * 20);
+    } else if (drinkResponse == "no") {
+      return (0);
+    } else {
+      return (0);
+    }
+  }
+
+  public int whichLocation (String locationResponse) {
+    if (locationResponse == "hawaii") {
+      return (10000);
+    } else if (locationResponse == "california") {
+      return (5000);
+    } else if (locationResponse == "spain") {
+      return (20000);
+    } else {return 0;
+    }
+    }
+
 
   }
-}

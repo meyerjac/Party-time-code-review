@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="PartyTimeTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2016-09-10T05:45:04" hostname="JacksoneyersMBP" time="0.012">
+<testsuite name="PartyTimeTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2016-09-11T07:56:11" hostname="JacksoneyersMBP.lan" time="0.014">
   <properties/>
-  <testcase name="NewPartyTime_instantiates_correctly" classname="PartyTimeTest" time="0.005"/>
-  <testcase name="NewPartyTime_CostPerPerson_1000" classname="PartyTimeTest" time="0.001"/>
-  <testcase name="NewPartyTime_determinesIfItIsAWeddingOrNot_true" classname="PartyTimeTest" time="0.001"/>
+  <testcase name="NewPartyTime_calculateFoodPackageCost_fogoDeChao" classname="PartyTimeTest" time="0.004"/>
+  <testcase name="NewPartyTime_instantiates_correctly" classname="PartyTimeTest" time="0.003"/>
+  <testcase name="NewPartyTime_CalculatesHourlyFee_8" classname="PartyTimeTest" time="0.0"/>
+  <testcase name="NewPartyTime_BaseCostForWeddingForPeople_1000" classname="PartyTimeTest" time="0.001"/>
+  <testcase name="NewPartyTime_determinesIfItIsAWeddingOrNot_true" classname="PartyTimeTest" time="0.0"/>
+  <testcase name="NewPartyTime_calculateLocationCharge_20000" classname="PartyTimeTest" time="0.0"/>
+  <testcase name="NewPartyTime_calculateDrinkPackageCost_20" classname="PartyTimeTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
