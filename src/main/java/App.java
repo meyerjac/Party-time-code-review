@@ -38,16 +38,28 @@ public class App {
     System.out.println(totalLocationCost);
 
 
+
+    // STILL NEED A TOTAL COST METHOD!!!!! 
+
     System.out.println("you did it! you planned your Event! Below are the details of your event, the costs broken down for each selection and your total ESTIMATED cost!");
 
-    System.out.println("Your event:");
+
+    /*summary of your event!*/
+
+    System.out.println("YOUR EVENT:");
     System.out.println("Event: you are hosting a wedding? " + boolUserInput);
+
     System.out.println("People: we have an hourly base price of $10/person, so your total fee is " + "$" + basePriceOfPeople);
+
     System.out.println("Time: we have an hourly base price of $2/person/hr, so your hourly fee is " + "$" + totalPriceForHours + "per person");
+
     System.out.println("Food: each food company has different prices, the catering company you chose will cost you an extra " + "$" + totalCostFoodPackage);
+
     System.out.println("Drink: open bar is $20/head, otherwise it is no extra, your total cost for your party with you amount of guests is " + "$" + totalDrinkCost);
+
     System.out.println("Location: becuase you chose that location it is an extra " + "$" + totalLocationCost);
-    // 
+
+    //
     // System.out.println("Total: "
   }
 }

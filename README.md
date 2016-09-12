@@ -17,22 +17,17 @@ _This party planning java application is designed to ask the user some questions
 
 
 ## BDD Specs
- * Test the application creates a new Event with  new event call.
+ * Test the application creates a new Event with new event call.
  * test method for identifying wedding party vs other parties.
- * test method for people.
- * test method for price of food catered.
- * test method for open bar vs byob.
- * test location method.
+ * test method for number of people price.
+ * test method for price of food catered from different companies.
+ * test method for open bar vs byob prices.
+ * test location price method.
  * test total price method.
-
-
-
-
-
 
 ## Known Bugs
 
-_there are A TON OF bugs at this time; the end goal of this project is to demonstrate that I understand the basics of objects, syntax, encapsulation, testing, and most importantly BDD in java through week 1 at my coding school_
+_there are A couple bugs at this time; the end goal of this project is to demonstrate that I understand the basics of objects, syntax, encapsulation, testing, and most importantly BDD in java through week 1 at my coding school_
 
 ## Support and contact details
 
