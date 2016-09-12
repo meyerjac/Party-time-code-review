@@ -4,19 +4,11 @@ public class App {
   public static void main(String[] args) {
     Console myConsole = System.console();
 
-
     PartyTime Event = new PartyTime("", 0,0,"","","");
-    Event.mType = "";
-    Event.mPeople = 0;
-    Event.mHours = 0;
-    Event.mFood = "";
-    Event.mDrink = "";
-    Event.mLocation = "";
-
 
     System.out.println("I am guessing you are here to plan an event, are you here to plan a wedding? (answer: yes or no)");
     String inputStringWedding = myConsole.readLine();
-    Boolean userInput = Event.isWedding(inputStringWedding);
+    boolean boolUserInput = Event.isWedding(inputStringWedding);
 
     System.out.println("How many people are attending the event?");
     String inputStringPeople = myConsole.readLine();
@@ -44,5 +36,18 @@ public class App {
     String inputStringLocation = myConsole.readLine();
     int totalLocationCost = Event.whichLocation(inputStringLocation);
     System.out.println(totalLocationCost);
+
+
+    System.out.println("you did it! you planned your Event! Below are the details of your event, the costs broken down for each selection and your total ESTIMATED cost!");
+
+    System.out.println("Your event:");
+    System.out.println("Event: you are hosting a wedding? " + boolUserInput);
+    System.out.println("People: we have an hourly base price of $10/person, so your total fee is " + "$" + basePriceOfPeople);
+    System.out.println("Time: we have an hourly base price of $2/person/hr, so your hourly fee is " + "$" + totalPriceForHours + "per person");
+    System.out.println("Food: each food company has different prices, the catering company you chose will cost you an extra " + "$" + totalCostFoodPackage);
+    System.out.println("Drink: open bar is $20/head, otherwise it is no extra, your total cost for your party with you amount of guests is " + "$" + totalDrinkCost);
+    System.out.println("Location: becuase you chose that location it is an extra " + "$" + totalLocationCost);
+    // 
+    // System.out.println("Total: "
   }
 }

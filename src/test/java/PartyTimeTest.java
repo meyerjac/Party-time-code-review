@@ -8,7 +8,7 @@ public class PartyTimeTest {
   @Test
     public void NewPartyTime_instantiates_correctly(){
       PartyTime testPartyTime = new PartyTime("wedding", 0, 0, "fogo", "openbar", "hawaii");
-      boolean outcome = true;
+      Boolean outcome = true;
       assertEquals(outcome, testPartyTime instanceof PartyTime);
     }
 
