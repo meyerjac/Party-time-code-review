@@ -1,11 +1,10 @@
 public class PartyTime {
-  public String mType;
-  public int mPeople;
-  public int mHours;
-  public String mFood;
-  public String mDrink;
-  public String mLocation;
-
+  private String mType;
+  private int mPeople;
+  private int mHours;
+  private String mFood;
+  private String mDrink;
+  private String mLocation;
 
   public PartyTime(String type, int people, int hours , String food, String drink, String location) {
     mType = type;
@@ -16,32 +15,36 @@ public class PartyTime {
     mLocation = location;
   }
 
-  public boolean isWedding(String weddingResponse) {
-    if (weddingResponse.equals("yes")) {
-      return true;
-    } else {
-      return false;
-    }
+  public int getType(String eventResponse) {
+    if (eventResponse.equals("wedding")) {
+      return 10000;
+  } else if (eventResponse.equals("birthday")) {
+      return 5000;
+  } else if (eventResponse.equals("other")) {
+    return 1000;
+  } else return 0;
   }
-  public int getBaseCostForPeople(Integer mPeople) {
-      return (mPeople * 10); /* $10 base cost per person*/
-    }
 
-  public int getNumberOfHours(Integer mHours) {
-      return (mHours * 2); /* there is a fee per hour for different venues*/
-    }
+  public int getBaseCostForPeople(Integer numberOfPeople) {
+      return (numberOfPeople * 10); /* $10 base cost per person*/
+  }
 
-  public int whichFoodPackage (String foodResponse, int numberOfPeople) {
+  public int getNumberOfHours(Integer numberOfHours) {
+    return (numberOfHours);
+  }
+
+  public int GetFoodCostPerPerson (String foodResponse) {
     if (foodResponse.equals("panda")) {
-      return (numberOfPeople * 15);
+      return (15);
     } else if (foodResponse.equals("fogo")) {
-      return (numberOfPeople * 50);
-    } else return numberOfPeople * 10;
+      return (50);
+    } else
+    return 10;
   }
 
-  public int whichDrinkPackage (String drinkResponse, int numberOfPeople) {
+  public int GetDrinkCostPerPerson (String drinkResponse) {
     if (drinkResponse.equals("yes")) {
-      return (numberOfPeople * 20);
+      return (20);
     } else if (drinkResponse.equals("no")) {
       return (0);
     } else {
@@ -49,17 +52,13 @@ public class PartyTime {
     }
   }
 
-  public int whichLocation (String locationResponse) {
+  public int getLocation (String locationResponse) {
     if (locationResponse.equals("hawaii")) {
       return (10000);
     } else if (locationResponse.equals("california")) {
       return (5000);
     } else if (locationResponse.equals("spain")) {
       return (20000);
-    } else {return 0;
-    }
-    }
-
-
-
+    } else return 0;
   }
+}
