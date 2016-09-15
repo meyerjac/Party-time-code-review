@@ -33,7 +33,7 @@ public class PartyTime {
     return (numberOfHours);
   }
 
-  public int GetFoodCostPerPerson (String foodResponse) {
+  public int getFoodCostPerPerson (String foodResponse) {
     if (foodResponse.equals("panda")) {
       return (15);
     } else if (foodResponse.equals("fogo")) {
@@ -42,7 +42,7 @@ public class PartyTime {
     return 10;
   }
 
-  public int GetDrinkCostPerPerson (String drinkResponse) {
+  public int getDrinkCostPerPerson (String drinkResponse) {
     if (drinkResponse.equals("yes")) {
       return (20);
     } else if (drinkResponse.equals("no")) {
@@ -61,4 +61,10 @@ public class PartyTime {
       return (20000);
     } else return 0;
   }
+
+  public int Total( ) {
+
+  }
+
+
 }

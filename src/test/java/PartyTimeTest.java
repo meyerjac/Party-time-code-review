@@ -37,14 +37,14 @@ public class PartyTimeTest {
     public void NewPartyTime_calculateFoodPackagePerPerson_fogo(){
       PartyTime testPartyTime = new PartyTime("wedding", 0, 0, "fogo", "openbar", "hawaii");
       int outcome = 50;
-      assertEquals(outcome, testPartyTime.GetFoodCostPerPerson("fogo"));
+      assertEquals(outcome, testPartyTime.getFoodCostPerPerson("fogo"));
     }
 
   @Test
     public void NewPartyTime_calculateDrinkPackageCost_20(){
       PartyTime testPartyTime = new PartyTime("wedding", 0, 0, "fogo", "openbar", "hawaii");
       int outcome = 20;
-      assertEquals(outcome, testPartyTime.GetDrinkCostPerPerson("yes"));
+      assertEquals(outcome, testPartyTime.getDrinkCostPerPerson("yes"));
     }
 
   @Test
@@ -53,4 +53,19 @@ public class PartyTimeTest {
       int outcome = 20000;
       assertEquals(outcome, testPartyTime.getLocation("spain"));
     }
+
+    @Test
+      public void NewPartyTime_getTotal_20000(){
+        PartyTime testPartyTime = new PartyTime("wedding", 0, 0, "fogo", "openbar", "hawaii");
+        int outcome = 20000;
+        assertEquals(outcome, testPartyTime.getLocation("spain"));
+      }
+
+    // public int Total(Integer numberOfHours) {
+    //   ;
+    // }
+
+
+
+
   }
