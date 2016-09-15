@@ -25,30 +25,42 @@ public class App {
     System.out.println("would you like an open bar? (yes/no)");
     String stringDrink = myConsole.readLine();
 
-    System.out.println("We have four options for where you can have this event to take place? (please type hawaii, spain, or nearby)");
+    System.out.println("We have three options for where you can have this event to take place? (please type hawaii, spain, or nearby)");
     String stringLocation = myConsole.readLine();
 
-    System.out.println("you did it! you planned your Event! Below are the details of your event, the costs broken down for each selection and your total ESTIMATED cost!");
-
+    System.out.println("you did it! you planned your Event! Below is your total ESTIMATED cost for this event!");
 
     PartyTime Event = new PartyTime(stringType, intPeople, intHours, stringFood, stringDrink, stringLocation);
 
-    // System.out.println("Your party is going to cost you a total of " + Event.ThatTotal());
+
+
+    System.out.println("########################################");
+    System.out.println("Event: you are hosting a " + stringType + " type of Event!");
+
+    System.out.println("you will have" + intPeople + " people at this event, That's Awesome!");
+
+    System.out.println("Time: your event will be " + intHours + " hours long! Wow!");
+
+    System.out.println("Food: each food company has different prices, you chose " + stringFood + " and it will cost you an extra " +  Event.foodTotal() + "!!!");
+
+    System.out.println("Drink: open bar is $20/head, otherwise it is no extra");
+
+    System.out.println("Location: becuase you chose that location it is an extra " + "$" + Event.locationTotal();
+
+    System.out.println("Location: becuase you chose that location it is an extra " + "$" + Event.TotalTotal();
+
+
+
+
+
+
+
+
+
+
+
   }
 }
 
-//
-// /*summary of your event!*/
-//
-// System.out.println("YOUR EVENT:");
-// System.out.println("Event: you are hosting a " + inputStringType + " type of Event");
-//
-// System.out.println("you will have" + numberOfPeople + " people at this event, nice!");
-//
-// System.out.println("Time: your event will be " + inputHours + " hours long");
-//
-// System.out.println("Food: each food company has different prices, you chose " + inputStringFood + "will cost you extra $$$$");
-//
-// System.out.println("Drink: open bar is $20/head, otherwise it is no extra");
-//
-// System.out.println("Location: becuase you chose that location it is an extra " + "$" + totalLocationCost);
+
+/*summary of your event!*/

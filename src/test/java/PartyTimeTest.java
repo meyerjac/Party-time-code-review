@@ -44,24 +44,30 @@ public class PartyTimeTest {
       PartyTime testPartyTime = new PartyTime("wedding", 10, 10, "fogo", "yes", "hawaii");
       assertEquals("hawaii", testPartyTime.getLocation());
     }
-    @Test
-      public void NewPartyTime_returningThetypeTotal_0(){
-        PartyTime testPartyTime = new PartyTime("birthday", 10, 10, "fogo", "yes", "hawaii");
-        assertEquals(2000, testPartyTime.typeTotal());
-      }
-    @Test
-      public void NewPartyTime_returningThefoodTotal_0(){
-        PartyTime testPartyTime = new PartyTime("birthday", 10, 10, "fogo", "yes", "hawaii");
-        assertEquals(500, testPartyTime.foodTotal());
-      }
-    @Test
-      public void NewPartyTime_returningTheBarTotal_(){
-        PartyTime testPartyTime = new PartyTime("birthday", 10, 10, "fogo", "yes", "hawaii");
-        assertEquals(2000, testPartyTime.barTotal());
-      }
-    @Test
-      public void NewPartyTime_returningTheLocationTotal_15000(){
-        PartyTime testPartyTime = new PartyTime("birthday", 10, 10, "fogo", "yes", "hawaii");
-        assertEquals(15000, testPartyTime.locationTotal());
-      }
-  }
+  @Test
+    public void NewPartyTime_returningThetypeTotal_0(){
+      PartyTime testPartyTime = new PartyTime("birthday", 10, 10, "fogo", "yes", "hawaii");
+      assertEquals(2000, testPartyTime.typeTotal());
+    }
+  @Test
+    public void NewPartyTime_returningThefoodTotal_0(){
+      PartyTime testPartyTime = new PartyTime("birthday", 10, 10, "fogo", "yes", "hawaii");
+      assertEquals(500, testPartyTime.foodTotal());
+    }
+  @Test
+    public void NewPartyTime_returningTheBarTotal_2000(){
+      PartyTime testPartyTime = new PartyTime("birthday", 10, 10, "fogo", "yes", "hawaii");
+      assertEquals(2000, testPartyTime.barTotal());
+    }
+  @Test
+    public void NewPartyTime_returningTheLocationTotal_15000(){
+      PartyTime testPartyTime = new PartyTime("birthday", 10, 10, "fogo", "yes", "hawaii");
+      assertEquals(15000, testPartyTime.locationTotal());
+    }
+
+  @Test
+    public void NewPartyTime_returningTheTOTALTOTAL_15000(){
+      PartyTime testPartyTime = new PartyTime("birthday", 10, 10, "fogo", "yes", "hawaii");
+      assertEquals(, testPartyTime.TotalTotal());
+    }
+}

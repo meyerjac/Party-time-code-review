@@ -42,9 +42,9 @@ public class PartyTime {
       typetotal += 5000;
     } else {
       typetotal += 1000;
+    }
+    return typetotal;
   }
-  return typetotal;
-}
   public int foodTotal() {
     Integer foodtotal = 0;
     if (mFood.equals("fogo")) {
@@ -61,7 +61,6 @@ public class PartyTime {
       return foodtotal;
     }
   }
-
   public int barTotal() {
     Integer bartotal = 0;
     if (mDrink.equals("yes")) {
@@ -75,7 +74,6 @@ public class PartyTime {
       return bartotal;
     }
   }
-
   public int locationTotal() {
     Integer locationtotal = 0;
     if (mLocation.equals("spain") || mLocation.equals("hawaii")) {
@@ -87,6 +85,6 @@ public class PartyTime {
     } else {
       locationtotal += 200;
       return locationtotal;
+    }
   }
-}
 }
