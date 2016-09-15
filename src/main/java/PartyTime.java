@@ -29,7 +29,7 @@ public class PartyTime {
   }
   public String getDrink () {
     return mDrink;
-    }
+  }
   public String getLocation() {
     return mLocation;
   }
@@ -64,7 +64,7 @@ public class PartyTime {
   public int barTotal() {
     Integer bartotal = 0;
     if (mDrink.equals("yes")) {
-      bartotal += 2000;
+      bartotal = (mPeople * 20);
       return bartotal;
     } else if (mDrink.equals("no")) {
       bartotal += 200;
@@ -87,4 +87,40 @@ public class PartyTime {
       return locationtotal;
     }
   }
+
+  public int TotalTotal() {
+    Integer totaltotal = 0;
+    if (mType.equals("birthday") || mType.equals("other")) {
+      totaltotal += 2000;
+    } else if (mType.equals("wedding")) {
+      totaltotal += 5000;
+    } else {
+      totaltotal += 1000;
+    }
+    if (mFood.equals("fogo")) {
+      totaltotal += (50 * mPeople);
+    } else if (mFood.equals("panda")) {
+      totaltotal += (20 * mPeople);
+    } else if (mFood.equals("mcdonalds")) {
+      totaltotal += (10 * mPeople);
+    }  else {
+      totaltotal += 500;
+    }
+    if (mDrink.equals("yes")) {
+      totaltotal += (mPeople * 20);
+    } else if (mDrink.equals("no")) {
+      totaltotal += 200;
+    } else {
+      totaltotal += 50;
+    }
+    if (mLocation.equals("spain") || mLocation.equals("hawaii")) {
+      totaltotal += 15000;
+    } else if (mLocation.equals("nearby")) {
+      totaltotal += 5000;
+    } else {
+      totaltotal += 200;
+    }
+    return totaltotal;
+  }
+
 }

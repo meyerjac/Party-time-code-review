@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="PartyTimeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-09-09T22:09:11" hostname="epicodus-10.local" time="0.001">
-  <properties/>
-  <testcase name="NewEvent_instantiates_correctly" classname="PartyTimeTest" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
